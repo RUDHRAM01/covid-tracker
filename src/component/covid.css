@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+.heading1{
+    color: white;
+}
+.liveZ{
+    animation: zoom-in-zoom-out 2s ease-out infinite;     
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+    transform: scale(1, 1);
+    }
+    50% {
+    transform: scale(1.5, 1.5);
+    }
+    100% {
+    transform: scale(1, 1);
+    }
+    }
+.heading1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card , .base_card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    max-width: 50rem;
+    margin: 3rem;
+}
+.card_main1,.card_main2,.card_main3,.card_main4,.card_main5,.card_main6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+}
+.card_main1{
+    background-color: rgb(109, 109, 172);
+    color: white;
+    margin: 0.5rem;
+}
+
+.card_main2{
+    background-color: rgb(102, 203, 102);
+    color: white;
+    margin: 0.5rem;
+}
+.card_main3{
+    background-color: coral;
+    color: white;
+    margin: 0.5rem;
+}
+
+.card_main4{
+    background-color: rgb(211, 84, 109);
+    color: white;
+    margin: 0.5rem;
+}
+
+.card_main5{
+    background-color: rgb(242, 197, 83);
+    color: white;
+    margin: 0.5rem;
+}
+
+.card_main6{
+    background-color: rgb(225, 135, 231);
+    color: white;
+    margin: 0.5rem;
+}
+
+/* ==========================MEDIA QUERIES (medium)=========== */
+
+@media screen and (max-width: 765px){
+    .main{
+        max-width: 35rem;
+    }
+}
+
+/* ==========================MEDIA QUERIES (small)=========== */
+
+@media screen and (max-width: 600px){
+    .main{
+        max-width: 15rem;
+    }
+}
